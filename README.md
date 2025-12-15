@@ -3,23 +3,24 @@
 This repository contains packaged binaries for **AxeLive**.
 
 - Source repo: https://github.com/WillItMod/AxeLive
-- Current release: `windows/AxeLive_V1.0_ALPHA_2.exe`
+- Current release: `windows/AxeLive_V1.0_ALPHA_3.exe`
 
 ## Windows
 
 ### Downloads
-- `windows/AxeLive_V1.0_ALPHA_2.exe`
-- (Previous) `windows/AxeLive_V1.0_ALPHA_1.exe`
+- `windows/AxeLive_V1.0_ALPHA_3.exe`
+- (Previous) `windows/AxeLive_V1.0_ALPHA_2.exe`
+- (Older) `windows/AxeLive_V1.0_ALPHA_1.exe`
 
 ### Verify integrity
 ```powershell
 cd <folder-you-downloaded>
-Get-FileHash .\windows\AxeLive_V1.0_ALPHA_2.exe -Algorithm SHA256
+Get-FileHash .\windows\AxeLive_V1.0_ALPHA_3.exe -Algorithm SHA256
 type .\SHA256SUMS.txt
 ```
 
 ### Run
-Double-click `windows/AxeLive_V1.0_ALPHA_2.exe`.
+Double-click `windows/AxeLive_V1.0_ALPHA_3.exe`.
 
 By default AxeLive runs on `http://127.0.0.1:5210`.
 
@@ -32,7 +33,7 @@ Example:
 ```powershell
 $env:AXELIVE_PORT="5210"
 $env:AXELIVE_HOME="$env:USERPROFILE\\.axelive"
-.\windows\AxeLive_V1.0_ALPHA_2.exe
+.\windows\AxeLive_V1.0_ALPHA_3.exe
 ```
 
 ### Embedded desktop window (WebView)
