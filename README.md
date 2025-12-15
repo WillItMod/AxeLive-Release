@@ -2,35 +2,37 @@
 
 This repository contains packaged binaries for **AxeLive**.
 
-- Current release: `windows/AxeLive_V1.0_ALPHA_1.exe`
+- Source repo: https://github.com/WillItMod/AxeLive
+- Current release: `windows/AxeLive_V1.0_ALPHA_2.exe`
 
-## Windows (recommended)
+## Windows
 
-### Download
-- `windows/AxeLive_V1.0_ALPHA_1.exe`
+### Downloads
+- `windows/AxeLive_V1.0_ALPHA_2.exe`
+- (Previous) `windows/AxeLive_V1.0_ALPHA_1.exe`
 
-Verify integrity:
+### Verify integrity
 ```powershell
 cd <folder-you-downloaded>
-Get-FileHash .\windows\AxeLive_V1.0_ALPHA_1.exe -Algorithm SHA256
+Get-FileHash .\windows\AxeLive_V1.0_ALPHA_2.exe -Algorithm SHA256
 type .\SHA256SUMS.txt
 ```
 
 ### Run
-Double-click `windows/AxeLive_V1.0_ALPHA_1.exe`.
+Double-click `windows/AxeLive_V1.0_ALPHA_2.exe`.
 
 By default AxeLive runs on `http://127.0.0.1:5210`.
 
 Optional environment variables:
 - `AXELIVE_PORT` (default `5210`)
 - `AXELIVE_HOST` (default `0.0.0.0`)
-- `AXELIVE_HOME` (default `%USERPROFILE%\.axelive`) — device list + settings are stored here.
+- `AXELIVE_HOME` (default `%USERPROFILE%\.axelive`) - device list + settings are stored here
 
 Example:
 ```powershell
 $env:AXELIVE_PORT="5210"
 $env:AXELIVE_HOME="$env:USERPROFILE\\.axelive"
-.\windows\AxeLive_V1.0_ALPHA_1.exe
+.\windows\AxeLive_V1.0_ALPHA_2.exe
 ```
 
 ### Embedded desktop window (WebView)
@@ -44,4 +46,3 @@ If the window does not appear and a browser opens instead, install **Microsoft E
 
 ## Safety
 Read `DISCLAIMER.md` before using any tuning features.
-
