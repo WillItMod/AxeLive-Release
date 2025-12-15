@@ -2,7 +2,6 @@
 
 This repository contains packaged binaries for **AxeLive**.
 
-- Source repo: https://github.com/WillItMod/AxeLive
 - Current release: `windows/AxeLive_V1.0_ALPHA_1.exe`
 
 ## Windows (recommended)
