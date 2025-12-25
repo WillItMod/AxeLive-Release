@@ -5,8 +5,8 @@ This repository is the binary + checksum “source of truth” for AxeLive distr
 ## Checklist
 
 1) Build binaries in the AxeLive source repo
-- Repo: https://github.com/WillItMod/AxeLive
-- Ensure the version string is correct in the source (e.g. `APP_VERSION`).
+- Repo: private (do not link publicly)
+- Ensure the version string is correct in the source.
 - Produce:
   - `AxeLive_<VERSION>.exe` (Windows)
   - `AxeLive_<VERSION>.bin` (Linux)
