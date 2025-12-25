@@ -1,8 +1,8 @@
-# AxeLive Releases
+﻿# AxeLive Releases
 
 This repository contains packaged binaries for **AxeLive**.
 
-- Current release: `V1.1_BETA_6`
+- Current release: `V1.1_BETA_7`
 
 ## Highlights
 - Huge: Canaan Avalon Nano 3 / Nano 3S support (fan control + work mode)
@@ -11,8 +11,8 @@ This repository contains packaged binaries for **AxeLive**.
 - Device grouping: drag-and-drop mini tiles, group rename/delete, and group reordering
 
 Direct downloads (latest):
-- Windows: https://github.com/WillItMod/AxeLive-Release/raw/main/windows/AxeLive_V1.1_BETA_6.exe
-- Linux: https://github.com/WillItMod/AxeLive-Release/raw/main/linux/AxeLive_V1.1_BETA_6.bin
+- Windows: https://github.com/WillItMod/AxeLive-Release/raw/main/windows/AxeLive_V1.1_BETA_7.exe
+- Linux: https://github.com/WillItMod/AxeLive-Release/raw/main/linux/AxeLive_V1.1_BETA_7.bin
 
 Checksums:
 - https://github.com/WillItMod/AxeLive-Release/blob/main/SHA256SUMS.txt
