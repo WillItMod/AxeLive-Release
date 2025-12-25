@@ -31,8 +31,7 @@ Current binaries:
 Checksums (SHA256):
 - https://github.com/WillItMod/AxeLive-Release/blob/main/SHA256SUMS.txt
 
-Source repo:
-- https://github.com/WillItMod/AxeLive
+Source repo: (private)
 
 ## How to run
 
@@ -73,4 +72,3 @@ AXELIVE_PORT=5210 AXELIVE_HOST=0.0.0.0 AXELIVE_OPEN_UI=0 ./linux/AxeLive_V1.1_BE
 - `AXELIVE_PORT` (default `5210`)
 - `AXELIVE_HOST` (default `0.0.0.0`)
 - `AXELIVE_HOME` (default `%USERPROFILE%\.axelive` on Windows, `~/.axelive` on Linux)
-

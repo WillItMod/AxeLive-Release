@@ -29,8 +29,7 @@ Current binaries:
 Checksums (SHA256):
 - https://github.com/WillItMod/AxeLive-Release/blob/main/SHA256SUMS.txt
 
-Source repo:
-- https://github.com/WillItMod/AxeLive
+Source repo: (private)
 
 ## ▶️ How to run
 
