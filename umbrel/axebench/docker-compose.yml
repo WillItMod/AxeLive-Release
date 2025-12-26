@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: axebench_server_1
+      APP_PORT: 5211
+
+  server:
+    image: ghcr.io/willitmod/axebench:3.0.0
+    restart: on-failure
+    stop_grace_period: 30s
+    init: true
+    environment:
+      AXEBENCH_HOME: /data
+      AXEBENCH_PORT: 5211
+      AXEBENCH_HOST: 0.0.0.0
+    volumes:
+      - ${APP_DATA_DIR}/data:/data

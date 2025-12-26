@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: axelive_server_1
+      APP_PORT: 5210
+
+  server:
+    image: ghcr.io/willitmod/axelive:1.1-beta13
+    restart: on-failure
+    stop_grace_period: 30s
+    init: true
+    environment:
+      AXELIVE_HOME: /data
+      AXELIVE_PORT: 5210
+      AXELIVE_HOST: 0.0.0.0
+      AXELIVE_OPEN_UI: 0
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
