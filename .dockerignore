@@ -5,9 +5,9 @@ release-notes
 umbrel
 windows
 linux/*
+!linux/
 !linux/*.bin
 SHA256SUMS.txt
 README.md
 DISCLAIMER.md
 LICENSE
-
