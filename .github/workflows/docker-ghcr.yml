@@ -60,5 +60,5 @@ jobs:
           build-args: |
             BIN_PATH=${{ steps.bin.outputs.bin }}
           tags: |
-            ghcr.io/${{ github.repository_owner }}/axelive-release:${{ github.ref_name }}
-            ghcr.io/${{ github.repository_owner }}/axelive-release:latest
+            ghcr.io/willitmod/axelive-release:${{ github.ref_name }}
+            ghcr.io/willitmod/axelive-release:latest
