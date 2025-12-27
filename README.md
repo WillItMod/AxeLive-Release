@@ -2,7 +2,7 @@
 
 This repository contains packaged binaries for **AxeLive**.
 
-- Current release: `V1.1_BETA_13`
+- Current release: `v1.2`
 
 ## Highlights
 - Huge: Canaan Avalon Nano 3 / Nano 3S support (fan control + work mode)
@@ -12,8 +12,8 @@ This repository contains packaged binaries for **AxeLive**.
 - Nano thermal control improvements: power-aware prediction + glitch-resistant learning for tighter temperature stability
 
 Direct downloads (latest):
-- Windows: https://github.com/WillItMod/AxeLive-Release/raw/main/windows/AxeLive_V1.1_BETA_13.exe
-- Linux: https://github.com/WillItMod/AxeLive-Release/raw/main/linux/AxeLive_V1.1_BETA_13.bin
+- Windows: https://github.com/WillItMod/AxeLive-Release/raw/main/windows/AxeLive_v1.2.exe
+- Linux: https://github.com/WillItMod/AxeLive-Release/raw/main/linux/AxeLive_V1.2.bin
 
 Checksums:
 - https://github.com/WillItMod/AxeLive-Release/blob/main/SHA256SUMS.txt
@@ -27,8 +27,8 @@ Checksums:
 - Default port is `5210` (configurable via `AXELIVE_PORT`).
 
 ## Licensing / Patreon
-- AxeLive can optionally integrate with a remote licensing server for Patreon tiers.
-- No Patreon secrets are stored in the app binary; secrets belong on the licensing server.
+- AxeLive integrates with the hosted licensing server for Patreon tiers.
+- No Patreon secrets are stored in the app; secrets live only on the licensing server.
 
 ## Safety
 Read the included disclaimer before using any tuning features.

@@ -13,10 +13,10 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
-ARG BIN_PATH=linux/AxeLive_V1.1_BETA_13.bin
+ARG BIN_PATH=linux/AxeLive_V1.2.bin
 COPY ${BIN_PATH} /app/axelive.bin
 RUN chmod +x /app/axelive.bin && chown -R 1000:1000 /app
 
 EXPOSE 5210
 USER 1000:1000
-CMD ["/app/axelive.bin"]
+CMD ["/app/axelive.bin","--replace-instance"]
