@@ -13,9 +13,19 @@ RUN apt-get update \
   && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
-ARG BIN_PATH=linux/AxeLive_V1.2.bin
-COPY ${BIN_PATH} /app/axelive.bin
-RUN chmod +x /app/axelive.bin && chown -R 1000:1000 /app
+ARG AXELIVE_TAG=1.2
+ARG TARGETARCH
+COPY linux/ /tmp/linux/
+RUN set -euo pipefail; \
+  case "${TARGETARCH}" in \
+    amd64) src="/tmp/linux/AxeLive_V${AXELIVE_TAG}.bin" ;; \
+    arm64) src="/tmp/linux/AxeLive_V${AXELIVE_TAG}_arm64.bin" ;; \
+    *) echo "Unsupported TARGETARCH: ${TARGETARCH}" >&2; exit 1 ;; \
+  esac; \
+  test -f "${src}"; \
+  cp "${src}" /app/axelive.bin; \
+  chmod +x /app/axelive.bin; \
+  chown -R 1000:1000 /app
 
 EXPOSE 5210
 USER 1000:1000
